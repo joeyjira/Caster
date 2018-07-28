@@ -5,6 +5,11 @@
     <title>Caster</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/master.css">
+
+    <link href="https://vjs.zencdn.net/7.1.0/video-js.css" rel="stylesheet">
+    <script src="./node_modules/videojs-ie8/dist/videojs-ie8.min.js"></script>
+    <script src="./node_modules/videojs-flvjs/dist/videojs-flvjs.min.js"></script>
+    <script src="./node_modules/flv.js/dist/flv.min.js"></script>
   </head>
   <body>
     <aside>
@@ -13,6 +18,28 @@
     <main>
       <header>
       </header>
+      <!-- <video id="videojs-flvjs-player" class="video-js vjs-default-skin" controls>
+        <source src="/Volumes/WD%20Elements/%E5%8D%A1%E9%80%9A/%5B%E6%97%A5%E6%9C%AC%5D%5B1992%5D%5B%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%5D%5B1665%E9%9B%86%E5%85%A8%5D%5B%E5%9B%BD%E8%AF%AD%5D/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0_%E9%AB%98%E6%B8%85%E7%89%88%20(1).flv" type='video/x-flv'>
+      </video> -->
+      <video class="video-js">
+  <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+  <source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm">
+</video>
+      <script>
+  // For v5 the tech must be added to the tech order.
+  // For v6 this is not needed.
+  // videojs('videojs-flvjs-player', {
+  //   techOrder: ['html5', 'flvjs'],
+  //   flvjs: {
+  //     mediaDataSource: {
+  //       isLive: true,
+  //       cors: true,
+  //       withCredentials: false,
+  //     },
+  //     // config: {},
+  //   },
+  // });
+</script>
       <footer>
       </footer>
     </main>
